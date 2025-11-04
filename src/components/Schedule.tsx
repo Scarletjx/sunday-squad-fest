@@ -128,7 +128,7 @@ const Schedule = () => {
             </p>
             <div className="flex flex-wrap gap-4 justify-center">
               <a 
-                href="https://maps.google.com/?q=4-5+Langham+Pl,+London+W1B+3DG" 
+                href="https://maps.app.goo.gl/nMyg9upW49NJBGPTA" 
                 target="_blank" 
                 rel="noopener noreferrer"
                 className="inline-flex items-center gap-2 px-6 py-3 bg-secondary text-white font-semibold rounded-full hover:shadow-soft transform hover:scale-105 transition-all duration-300"
@@ -138,12 +138,17 @@ const Schedule = () => {
                 </svg>
                 Get Directions
               </a>
-              <button className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-full hover:shadow-soft transform hover:scale-105 transition-all duration-300">
+              <a 
+                href="https://www.youtube.com/watch?v=ooOELrGMn14" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 px-6 py-3 bg-primary text-white font-semibold rounded-full hover:shadow-soft transform hover:scale-105 transition-all duration-300"
+              >
                 <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M8 7V3m8 4V3m-9 8h10M5 21h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v12a2 2 0 002 2z" />
+                  <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m6 2a9 9 0 11-18 0 9 9 0 0118 0z" />
                 </svg>
-                Add to Calendar
-              </button>
+                RSVP
+              </a>
             </div>
           </div>
         </div>
