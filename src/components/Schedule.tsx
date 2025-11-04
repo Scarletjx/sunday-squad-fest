@@ -1,7 +1,7 @@
 import { Clock, Coffee, Mic, Utensils } from "lucide-react";
 import appleButterInterior from "@/assets/apple-butter-interior.jpg";
-import appleButterFood from "@/assets/apple-butter-food.jpg";
-import luckyVoiceLogo from "@/assets/lucky-voice-logo.png";
+import karaokeSinging from "@/assets/karaoke-singing.png";
+import burgerMeal from "@/assets/burger-meal.png";
 
 const Schedule = () => {
   const events = [
@@ -20,9 +20,8 @@ const Schedule = () => {
       description: "Show off those vocal talents (or just have fun trying!)",
       location: "Lucky Voice Soho",
       icon: Mic,
-      image: luckyVoiceLogo,
+      image: karaokeSinging,
       color: "bg-primary",
-      isLogo: true,
     },
     {
       time: "17:00+",
@@ -30,7 +29,7 @@ const Schedule = () => {
       description: "If we're still hungry, let's grab dinner together!",
       location: "TBD - We'll decide together",
       icon: Utensils,
-      image: appleButterFood,
+      image: burgerMeal,
       color: "bg-accent",
     },
   ];
@@ -94,21 +93,13 @@ const Schedule = () => {
 
                   {/* Image */}
                   <div className="flex-1">
-                    <div className={`relative overflow-hidden rounded-3xl shadow-card ${
-                      event.isLogo ? 'bg-white p-8' : ''
-                    }`}>
+                    <div className="relative overflow-hidden rounded-3xl shadow-card">
                       <img
                         src={event.image}
                         alt={event.title}
-                        className={`w-full ${
-                          event.isLogo 
-                            ? 'h-48 object-contain' 
-                            : 'h-64 object-cover'
-                        } transform hover:scale-105 transition-transform duration-500`}
+                        className="w-full h-64 object-cover transform hover:scale-105 transition-transform duration-500"
                       />
-                      {!event.isLogo && (
-                        <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
-                      )}
+                      <div className="absolute inset-0 bg-gradient-to-t from-black/20 to-transparent"></div>
                     </div>
                   </div>
                 </div>
